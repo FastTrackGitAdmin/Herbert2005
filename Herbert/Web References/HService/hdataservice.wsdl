@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.wildnoodle.com" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.wildnoodle.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.wildnoodle.com">
+      <s:element name="ExtractData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param3" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExtractDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExtractDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsValidGUID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param3" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param4" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param5" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param6" />
+            <s:element minOccurs="1" maxOccurs="1" name="Param7" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="Param8" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="Param13" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsValidGUIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsValidGUIDResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsValidDGUID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param3" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param4" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param5" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param6" />
+            <s:element minOccurs="1" maxOccurs="1" name="Param7" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="Param8" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="Param9" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsValidDGUIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsValidDGUIDResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserContestList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param5" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param7" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param8" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param9" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param10" />
+            <s:element minOccurs="1" maxOccurs="1" name="Param11" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="Param16" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="Param17" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserContestListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserContestListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DGetUserContestList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param5" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param7" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param8" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param9" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param10" />
+            <s:element minOccurs="1" maxOccurs="1" name="Param11" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="Param12" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="Param13" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DGetUserContestListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DGetUserContestListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Authenticate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param3" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param4" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenticateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataForGuest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param3" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param4" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param9" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataForGuestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataForGuestResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticateNew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param3" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param4" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param9" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticateNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenticateNewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DAuthenticateNew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param3" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param4" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param9" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DAuthenticateNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DAuthenticateNewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BulkLoad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BulkLoadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BulkLoadResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param3" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param4" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param5" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param6" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param7" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param8" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param9" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param10" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param11" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param12" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param14" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param15" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param16" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param17" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param18" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param19" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param20" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param21" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param22" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param23" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param24" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param25" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param26" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param27" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param28" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param29" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param30" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param31" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param32" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param33" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param34" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param36" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param37" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param38" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param39" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param40" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param41" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param42" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param43" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param44" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param45" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param46" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param47" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param48" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param49" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param50" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param51" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="VerifyDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyDataResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyDataLevel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param3" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param4" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param5" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param6" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param7" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param8" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param9" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param10" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param11" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param12" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param13" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param14" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param15" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param16" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param17" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param18" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyDataLevelResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ParseData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param3" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBase64Binary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="base64Binary" nillable="true" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ParseDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ParseDataResult" type="tns:ArrayOfBase64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPattern">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPatternResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPatternResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DParseData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param3" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param4" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DParseDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DParseDataResult" type="tns:ArrayOfBase64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisplayInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param2" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param3" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisplayInfoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="versionInfo">
+        <s:complexType />
+      </s:element>
+      <s:element name="versionInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="versionInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LevelInformation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="param2" />
+            <s:element minOccurs="0" maxOccurs="1" name="param3" />
+            <s:element minOccurs="0" maxOccurs="1" name="param4" />
+            <s:element minOccurs="0" maxOccurs="1" name="param5" />
+            <s:element minOccurs="0" maxOccurs="1" name="param6" />
+            <s:element minOccurs="0" maxOccurs="1" name="param7" />
+            <s:element minOccurs="0" maxOccurs="1" name="param8" />
+            <s:element minOccurs="0" maxOccurs="1" name="param9" />
+            <s:element minOccurs="0" maxOccurs="1" name="param10" />
+            <s:element minOccurs="0" maxOccurs="1" name="param11" />
+            <s:element minOccurs="0" maxOccurs="1" name="param12" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param13" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param14" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param15" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param16" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param17" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param18" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param19" />
+            <s:element minOccurs="0" maxOccurs="1" name="param20" />
+            <s:element minOccurs="0" maxOccurs="1" name="param21" />
+            <s:element minOccurs="0" maxOccurs="1" name="param22" />
+            <s:element minOccurs="0" maxOccurs="1" name="param23" />
+            <s:element minOccurs="0" maxOccurs="1" name="param24" />
+            <s:element minOccurs="0" maxOccurs="1" name="param25" />
+            <s:element minOccurs="0" maxOccurs="1" name="param26" />
+            <s:element minOccurs="0" maxOccurs="1" name="param27" />
+            <s:element minOccurs="0" maxOccurs="1" name="param28" />
+            <s:element minOccurs="0" maxOccurs="1" name="param29" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LevelInformationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LevelInformationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DLevelInformation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param1" />
+            <s:element minOccurs="0" maxOccurs="1" name="param3" />
+            <s:element minOccurs="0" maxOccurs="1" name="param4" />
+            <s:element minOccurs="0" maxOccurs="1" name="param5" />
+            <s:element minOccurs="0" maxOccurs="1" name="param6" />
+            <s:element minOccurs="0" maxOccurs="1" name="param7" />
+            <s:element minOccurs="0" maxOccurs="1" name="param8" />
+            <s:element minOccurs="0" maxOccurs="1" name="param9" />
+            <s:element minOccurs="0" maxOccurs="1" name="param10" />
+            <s:element minOccurs="0" maxOccurs="1" name="param12" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param13" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param14" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param15" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param16" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param17" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param18" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="param20" />
+            <s:element minOccurs="0" maxOccurs="1" name="param21" />
+            <s:element minOccurs="0" maxOccurs="1" name="param22" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DLevelInformationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DLevelInformationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MakeGuidNull">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MakeGuidNullResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MakeGuidNullResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Param1" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateDataResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExtractDataSoapIn">
+    <wsdl:part name="parameters" element="tns:ExtractData" />
+  </wsdl:message>
+  <wsdl:message name="ExtractDataSoapOut">
+    <wsdl:part name="parameters" element="tns:ExtractDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsValidGUIDSoapIn">
+    <wsdl:part name="parameters" element="tns:IsValidGUID" />
+  </wsdl:message>
+  <wsdl:message name="IsValidGUIDSoapOut">
+    <wsdl:part name="parameters" element="tns:IsValidGUIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsValidDGUIDSoapIn">
+    <wsdl:part name="parameters" element="tns:IsValidDGUID" />
+  </wsdl:message>
+  <wsdl:message name="IsValidDGUIDSoapOut">
+    <wsdl:part name="parameters" element="tns:IsValidDGUIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserContestListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserContestList" />
+  </wsdl:message>
+  <wsdl:message name="GetUserContestListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserContestListResponse" />
+  </wsdl:message>
+  <wsdl:message name="DGetUserContestListSoapIn">
+    <wsdl:part name="parameters" element="tns:DGetUserContestList" />
+  </wsdl:message>
+  <wsdl:message name="DGetUserContestListSoapOut">
+    <wsdl:part name="parameters" element="tns:DGetUserContestListResponse" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateSoapIn">
+    <wsdl:part name="parameters" element="tns:Authenticate" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateSoapOut">
+    <wsdl:part name="parameters" element="tns:AuthenticateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDataForGuestSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataForGuest" />
+  </wsdl:message>
+  <wsdl:message name="GetDataForGuestSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataForGuestResponse" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateNewSoapIn">
+    <wsdl:part name="parameters" element="tns:AuthenticateNew" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateNewSoapOut">
+    <wsdl:part name="parameters" element="tns:AuthenticateNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="DAuthenticateNewSoapIn">
+    <wsdl:part name="parameters" element="tns:DAuthenticateNew" />
+  </wsdl:message>
+  <wsdl:message name="DAuthenticateNewSoapOut">
+    <wsdl:part name="parameters" element="tns:DAuthenticateNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="BulkLoadSoapIn">
+    <wsdl:part name="parameters" element="tns:BulkLoad" />
+  </wsdl:message>
+  <wsdl:message name="BulkLoadSoapOut">
+    <wsdl:part name="parameters" element="tns:BulkLoadResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyDataSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyData" />
+  </wsdl:message>
+  <wsdl:message name="VerifyDataSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyDataLevelSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyDataLevel" />
+  </wsdl:message>
+  <wsdl:message name="VerifyDataLevelSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyDataLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ParseDataSoapIn">
+    <wsdl:part name="parameters" element="tns:ParseData" />
+  </wsdl:message>
+  <wsdl:message name="ParseDataSoapOut">
+    <wsdl:part name="parameters" element="tns:ParseDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPatternSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPattern" />
+  </wsdl:message>
+  <wsdl:message name="GetPatternSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPatternResponse" />
+  </wsdl:message>
+  <wsdl:message name="DParseDataSoapIn">
+    <wsdl:part name="parameters" element="tns:DParseData" />
+  </wsdl:message>
+  <wsdl:message name="DParseDataSoapOut">
+    <wsdl:part name="parameters" element="tns:DParseDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayInfo" />
+  </wsdl:message>
+  <wsdl:message name="DisplayInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="versionInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:versionInfo" />
+  </wsdl:message>
+  <wsdl:message name="versionInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:versionInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="LevelInformationSoapIn">
+    <wsdl:part name="parameters" element="tns:LevelInformation" />
+  </wsdl:message>
+  <wsdl:message name="LevelInformationSoapOut">
+    <wsdl:part name="parameters" element="tns:LevelInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="DLevelInformationSoapIn">
+    <wsdl:part name="parameters" element="tns:DLevelInformation" />
+  </wsdl:message>
+  <wsdl:message name="DLevelInformationSoapOut">
+    <wsdl:part name="parameters" element="tns:DLevelInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="MakeGuidNullSoapIn">
+    <wsdl:part name="parameters" element="tns:MakeGuidNull" />
+  </wsdl:message>
+  <wsdl:message name="MakeGuidNullSoapOut">
+    <wsdl:part name="parameters" element="tns:MakeGuidNullResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDataSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateData" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDataSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HDataServiceSoap">
+    <wsdl:operation name="ExtractData">
+      <wsdl:input message="tns:ExtractDataSoapIn" />
+      <wsdl:output message="tns:ExtractDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsValidGUID">
+      <wsdl:input message="tns:IsValidGUIDSoapIn" />
+      <wsdl:output message="tns:IsValidGUIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsValidDGUID">
+      <wsdl:input message="tns:IsValidDGUIDSoapIn" />
+      <wsdl:output message="tns:IsValidDGUIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContestList">
+      <wsdl:input message="tns:GetUserContestListSoapIn" />
+      <wsdl:output message="tns:GetUserContestListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DGetUserContestList">
+      <wsdl:input message="tns:DGetUserContestListSoapIn" />
+      <wsdl:output message="tns:DGetUserContestListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate">
+      <wsdl:input message="tns:AuthenticateSoapIn" />
+      <wsdl:output message="tns:AuthenticateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataForGuest">
+      <wsdl:input message="tns:GetDataForGuestSoapIn" />
+      <wsdl:output message="tns:GetDataForGuestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateNew">
+      <wsdl:input message="tns:AuthenticateNewSoapIn" />
+      <wsdl:output message="tns:AuthenticateNewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DAuthenticateNew">
+      <wsdl:input message="tns:DAuthenticateNewSoapIn" />
+      <wsdl:output message="tns:DAuthenticateNewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BulkLoad">
+      <wsdl:input message="tns:BulkLoadSoapIn" />
+      <wsdl:output message="tns:BulkLoadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyData">
+      <wsdl:input message="tns:VerifyDataSoapIn" />
+      <wsdl:output message="tns:VerifyDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyDataLevel">
+      <wsdl:input message="tns:VerifyDataLevelSoapIn" />
+      <wsdl:output message="tns:VerifyDataLevelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ParseData">
+      <wsdl:input message="tns:ParseDataSoapIn" />
+      <wsdl:output message="tns:ParseDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPattern">
+      <wsdl:input message="tns:GetPatternSoapIn" />
+      <wsdl:output message="tns:GetPatternSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DParseData">
+      <wsdl:input message="tns:DParseDataSoapIn" />
+      <wsdl:output message="tns:DParseDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInfo">
+      <wsdl:input message="tns:UpdateInfoSoapIn" />
+      <wsdl:output message="tns:UpdateInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayInfo">
+      <wsdl:input message="tns:DisplayInfoSoapIn" />
+      <wsdl:output message="tns:DisplayInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="versionInfo">
+      <wsdl:input message="tns:versionInfoSoapIn" />
+      <wsdl:output message="tns:versionInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LevelInformation">
+      <wsdl:input message="tns:LevelInformationSoapIn" />
+      <wsdl:output message="tns:LevelInformationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DLevelInformation">
+      <wsdl:input message="tns:DLevelInformationSoapIn" />
+      <wsdl:output message="tns:DLevelInformationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MakeGuidNull">
+      <wsdl:input message="tns:MakeGuidNullSoapIn" />
+      <wsdl:output message="tns:MakeGuidNullSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateData">
+      <wsdl:input message="tns:UpdateDataSoapIn" />
+      <wsdl:output message="tns:UpdateDataSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HDataServiceSoap" type="tns:HDataServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExtractData">
+      <soap:operation soapAction="http://www.wildnoodle.com/ExtractData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsValidGUID">
+      <soap:operation soapAction="http://www.wildnoodle.com/IsValidGUID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsValidDGUID">
+      <soap:operation soapAction="http://www.wildnoodle.com/IsValidDGUID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContestList">
+      <soap:operation soapAction="http://www.wildnoodle.com/GetUserContestList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DGetUserContestList">
+      <soap:operation soapAction="http://www.wildnoodle.com/DGetUserContestList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate">
+      <soap:operation soapAction="http://www.wildnoodle.com/Authenticate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataForGuest">
+      <soap:operation soapAction="http://www.wildnoodle.com/GetDataForGuest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateNew">
+      <soap:operation soapAction="http://www.wildnoodle.com/AuthenticateNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DAuthenticateNew">
+      <soap:operation soapAction="http://www.wildnoodle.com/DAuthenticateNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BulkLoad">
+      <soap:operation soapAction="http://www.wildnoodle.com/BulkLoad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyData">
+      <soap:operation soapAction="http://www.wildnoodle.com/VerifyData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyDataLevel">
+      <soap:operation soapAction="http://www.wildnoodle.com/VerifyDataLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ParseData">
+      <soap:operation soapAction="http://www.wildnoodle.com/ParseData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPattern">
+      <soap:operation soapAction="http://www.wildnoodle.com/GetPattern" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DParseData">
+      <soap:operation soapAction="http://www.wildnoodle.com/DParseData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInfo">
+      <soap:operation soapAction="http://www.wildnoodle.com/UpdateInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayInfo">
+      <soap:operation soapAction="http://www.wildnoodle.com/DisplayInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="versionInfo">
+      <soap:operation soapAction="http://www.wildnoodle.com/versionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LevelInformation">
+      <soap:operation soapAction="http://www.wildnoodle.com/LevelInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DLevelInformation">
+      <soap:operation soapAction="http://www.wildnoodle.com/DLevelInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MakeGuidNull">
+      <soap:operation soapAction="http://www.wildnoodle.com/MakeGuidNull" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateData">
+      <soap:operation soapAction="http://www.wildnoodle.com/UpdateData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HDataServiceSoap12" type="tns:HDataServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExtractData">
+      <soap12:operation soapAction="http://www.wildnoodle.com/ExtractData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsValidGUID">
+      <soap12:operation soapAction="http://www.wildnoodle.com/IsValidGUID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsValidDGUID">
+      <soap12:operation soapAction="http://www.wildnoodle.com/IsValidDGUID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContestList">
+      <soap12:operation soapAction="http://www.wildnoodle.com/GetUserContestList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DGetUserContestList">
+      <soap12:operation soapAction="http://www.wildnoodle.com/DGetUserContestList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate">
+      <soap12:operation soapAction="http://www.wildnoodle.com/Authenticate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataForGuest">
+      <soap12:operation soapAction="http://www.wildnoodle.com/GetDataForGuest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateNew">
+      <soap12:operation soapAction="http://www.wildnoodle.com/AuthenticateNew" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DAuthenticateNew">
+      <soap12:operation soapAction="http://www.wildnoodle.com/DAuthenticateNew" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BulkLoad">
+      <soap12:operation soapAction="http://www.wildnoodle.com/BulkLoad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyData">
+      <soap12:operation soapAction="http://www.wildnoodle.com/VerifyData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyDataLevel">
+      <soap12:operation soapAction="http://www.wildnoodle.com/VerifyDataLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ParseData">
+      <soap12:operation soapAction="http://www.wildnoodle.com/ParseData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPattern">
+      <soap12:operation soapAction="http://www.wildnoodle.com/GetPattern" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DParseData">
+      <soap12:operation soapAction="http://www.wildnoodle.com/DParseData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInfo">
+      <soap12:operation soapAction="http://www.wildnoodle.com/UpdateInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayInfo">
+      <soap12:operation soapAction="http://www.wildnoodle.com/DisplayInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="versionInfo">
+      <soap12:operation soapAction="http://www.wildnoodle.com/versionInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LevelInformation">
+      <soap12:operation soapAction="http://www.wildnoodle.com/LevelInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DLevelInformation">
+      <soap12:operation soapAction="http://www.wildnoodle.com/DLevelInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MakeGuidNull">
+      <soap12:operation soapAction="http://www.wildnoodle.com/MakeGuidNull" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateData">
+      <soap12:operation soapAction="http://www.wildnoodle.com/UpdateData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HDataService">
+    <wsdl:port name="HDataServiceSoap" binding="tns:HDataServiceSoap">
+      <soap:address location="http://www.wildnoodle.com/hdataservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HDataServiceSoap12" binding="tns:HDataServiceSoap12">
+      <soap12:address location="http://www.wildnoodle.com/hdataservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

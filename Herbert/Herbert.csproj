@@ -1,0 +1,282 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A86D4A24-511E-4784-858F-55E25AF8D4F2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Herbert</AssemblyName>
+    <AssemblyOriginatorKeyFile>Designer.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Designer</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>%24/Herbert2005/Herbert</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:Team Foundation Server MSSCCI Provider</SccProvider>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <ManifestTimestampUrl>http://timestamp.verisign.com/scripts/timstamp.dll</ManifestTimestampUrl>
+    <ManifestCertificateThumbprint>C76C82606343899BA2060F5321A386F2AEFEC81C</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Herbert_1_TemporaryKey.pfx</ManifestKeyFile>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>F:\NikhilK\Projects_Dev\Wildnoodle_Dev\20071113\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <InstallUrl>http://localhost/wildnoodle/</InstallUrl>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=203b825ffe0ea03d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Interop.IWshRuntimeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Designer.snk" />
+    <None Include="herbert.snk" />
+    <None Include="mypfxfile.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HService\hdataservice.wsdl" />
+    <None Include="Web References\HService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="WHerbert.snk" />
+    <Content Include="App.ico" />
+    <Content Include="BigEraser.cur" />
+    <Content Include="images\Herbert\large mode\Herbert45ZOOMIN.jpeg" />
+    <Content Include="images\Herbert\large mode\Herbert_45ZOOMIN.jpeg" />
+    <Content Include="images\Herbert\large mode\pbHrbtLeftLegZOOMIN.jpeg" />
+    <Content Include="images\Herbert\large mode\pbHrbtRightLegZOOMIN.jpeg" />
+    <Content Include="images\Herbert\large mode\pbHrbtStandingZOOMIN.jpeg" />
+    <Content Include="images\Herbert\large mode\StandingEyeClosedZOOMIN.jpeg" />
+    <Content Include="images\Herbert\small mode\Herbert45.jpeg" />
+    <Content Include="images\Herbert\small mode\Herbert_45.jpeg" />
+    <Content Include="images\Herbert\small mode\pbHrbtLeftLeg.jpeg" />
+    <Content Include="images\Herbert\small mode\pbHrbtRightLeg.jpeg" />
+    <Content Include="images\Herbert\small mode\pbHrbtStanding.jpeg" />
+    <Content Include="images\Herbert\small mode\StandingEyeClosed.jpeg" />
+    <Content Include="images\Login\thespokelogo.gif" />
+    <Content Include="images\tollbar\go.gif" />
+    <Content Include="images\tollbar\left.gif" />
+    <Content Include="images\tollbar\singlestep.gif" />
+    <Content Include="images\tollbar\stop.gif" />
+    <Content Include="images\tollbar\trace.gif" />
+    <Content Include="SmallEraser.cur" />
+    <None Include="Web References\HService\hdataservice.disco" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cHerbertBoard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GlobalData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HerbertMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HPathStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Level.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyPicBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PwdCryptoStream.cs" />
+    <Compile Include="Web References\HService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebCommandLineHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XMLEncryptor.cs" />
+    <EmbeddedResource Include="cHerbertBoard.resx">
+      <DependentUpon>cHerbertBoard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerbertMain.resx">
+      <DependentUpon>HerbertMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyPicBox.resx">
+      <DependentUpon>MyPicBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="HInterpreter\HInterpreter\HInterpreter.csproj">
+      <Project>{DFDABB8E-96C1-43E2-BD92-42BADA4F7D83}</Project>
+      <Name>HInterpreter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.wildnoodle.com/hdataservice.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HService\</RelPath>
+      <UpdateFromURL>http://www.wildnoodle.com/hdataservice.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Herbert_HService_HDataService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
